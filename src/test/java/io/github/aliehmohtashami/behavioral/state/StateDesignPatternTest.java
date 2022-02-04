@@ -1,7 +1,7 @@
 package io.github.aliehmohtashami.behavioral.state;
 
-import io.github.aliehmohtashami.behavioral.state.changeeable.TVContext;
-import io.github.aliehmohtashami.behavioral.state.changeeable.NormalOnState;
+import io.github.aliehmohtashami.behavioral.state.changeable.TVContext;
+import io.github.aliehmohtashami.behavioral.state.changeable.NormalOnState;
 import io.github.aliehmohtashami.behavioral.state.unchangeable.MortalKombat;
 import io.github.aliehmohtashami.behavioral.state.unchangeable.Word;
 import io.github.aliehmohtashami.behavioral.state.unchangeable.OperatingSystem;
@@ -14,7 +14,7 @@ import org.junit.Test;
 public class StateDesignPatternTest {
 
 	@Test
-	public void testDependentStatePattern() {
+	public void testChangeableStatePattern() {
 		TVContext TVContext = new TVContext();
 		TVContext.setCurrentTVState(new NormalOnState());
 		TVContext.pressMuteBtn();
@@ -24,7 +24,7 @@ public class StateDesignPatternTest {
 	}
 
 	@Test
-	public void testIndependentStatePattern() {
+	public void testUnChangeableStatePattern() {
 		OperatingSystem windows = new OperatingSystem();
 		windows.setCurrentApplication(new Word());
 		windows.pressCtrlPBtn();
