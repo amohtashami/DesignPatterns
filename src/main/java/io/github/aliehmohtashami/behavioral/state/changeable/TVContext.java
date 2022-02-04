@@ -1,4 +1,4 @@
-package io.github.aliehmohtashami.behavioral.state.changeeable;
+package io.github.aliehmohtashami.behavioral.state.changeable;
 
 import lombok.Data;
 
